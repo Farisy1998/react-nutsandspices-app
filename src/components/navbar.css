@@ -1,0 +1,23 @@
+.title {
+  font-size: x-large;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 0.5%;
+  margin: 1.5%;
+}
+
+#home {
+  margin-top: 10%;
+  margin-right: 5%;
+}
+#about {
+  margin-top: 10%;
+  margin-right: 5%;
+}
+#contact {
+  margin-top: 10%;
+  margin-right: 5%;
+}
+.body {
+  margin: 1%;
+}
