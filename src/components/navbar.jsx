@@ -15,8 +15,10 @@ class NavBar extends Component {
   handleAboutClick = () => {
     this.setState({ item: <About /> });
   };
+
   render() {
     const { id, item } = this.state;
+    const head = <head></head>;
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

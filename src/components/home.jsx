@@ -28,20 +28,6 @@ class Home extends Component {
                 alt="First slide"
               ></img>
             </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide"
-                alt="Second slide"
-              ></img>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide"
-                alt="Third slide"
-              ></img>
-            </div>
           </div>
           <a
             class="carousel-control-prev"
