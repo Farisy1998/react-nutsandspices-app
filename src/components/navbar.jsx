@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Home from "./home";
 import "./navbar.css";
 import About from "./about";
-import Contact from "./contact";
 
 class NavBar extends Component {
   state = {
@@ -18,7 +17,6 @@ class NavBar extends Component {
 
   render() {
     const { id, item } = this.state;
-    const head = <head></head>;
     return (
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
