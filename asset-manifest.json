@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Farisy1998/react-nutsandspices-app/static/css/main.9c408eca.css",
+    "main.js": "/Farisy1998/react-nutsandspices-app/static/js/main.9ee0030b.js",
+    "static/js/787.53b48021.chunk.js": "/Farisy1998/react-nutsandspices-app/static/js/787.53b48021.chunk.js",
+    "index.html": "/Farisy1998/react-nutsandspices-app/index.html",
+    "main.9c408eca.css.map": "/Farisy1998/react-nutsandspices-app/static/css/main.9c408eca.css.map",
+    "main.9ee0030b.js.map": "/Farisy1998/react-nutsandspices-app/static/js/main.9ee0030b.js.map",
+    "787.53b48021.chunk.js.map": "/Farisy1998/react-nutsandspices-app/static/js/787.53b48021.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c408eca.css",
+    "static/js/main.9ee0030b.js"
+  ]
+}
