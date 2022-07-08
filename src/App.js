@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import Nav from "./components/home/nav";
+import Nav from "./components/home/navbar/nav";
 import Carousel from "./components/home/carousel/carousel";
 import CategoriesCard from "./components/home/categories/categoriesCard";
+import ProductsCard from "./components/home/products/productsCard";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <Carousel />
       <CategoriesCard />
+      <ProductsCard />
     </React.Fragment>
   );
 }

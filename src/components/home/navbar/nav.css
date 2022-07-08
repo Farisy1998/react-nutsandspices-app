@@ -1,5 +1,5 @@
-* {
-  font-family: "Poppins", sans-serif;
+.container-fluid{
+  margin-top: 1%;
 }
 
 .navbar {
@@ -8,8 +8,8 @@
 }
 .navbar .logo {
   margin-left: 10%;
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 750;
   letter-spacing: 1px;
 }
 .navbar ul.nav {
@@ -24,7 +24,7 @@
   background: blueviolet;
 }
 .navbar ul.nav li a {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 500;
 }
 

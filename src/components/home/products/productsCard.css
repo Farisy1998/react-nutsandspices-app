@@ -1,0 +1,27 @@
+.products_card {
+  margin-top: 5%;
+}
+
+#products_card_title {
+  font-weight: 450;
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#products_card_card {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border-radius: 5;
+}
+
+#product_name {
+  cursor: pointer;
+}
+#product_name span:hover {
+  color: blue;
+}
