@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./components/navbar";
+import Nav from "./components/home/nav";
+import Carousel from "./components/home/carousel/carousel";
 
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
+      <Nav />
+      <Carousel />
     </React.Fragment>
   );
 }

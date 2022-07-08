@@ -1,0 +1,37 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+.navbar .logo {
+  margin-left: 10%;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar ul.nav {
+  margin-right: 10%;
+}
+
+.navbar ul.nav li.nav-item {
+  border-radius: 5%;
+  color: #000;
+}
+.navbar ul.nav li.nav-item:hover {
+  background: blueviolet;
+}
+.navbar ul.nav li a {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.navbar ul.nav li a span {
+  color: #000;
+}
+
+.navbar ul.nav li.nav-item:hover a span {
+  color: #fff;
+}
