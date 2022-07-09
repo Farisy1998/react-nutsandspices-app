@@ -1,8 +1,5 @@
-.categories_card {
-  margin-top: 5%;
-}
 
-#categories_card_title {
+#card_title {
   font-weight: 450;
   font-size: 1.7em;
   text-align: center;
@@ -12,10 +9,11 @@
   color: #fff;
 }
 
-#categories_card_card {
+#card_categories {
   margin-left: 6%;
   margin-right: 6%;
   margin-bottom: 4%;
+  margin-top: 2%;
   border-radius: 5px;
 }
 

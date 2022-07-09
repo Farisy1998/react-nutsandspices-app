@@ -11,9 +11,9 @@ class ProductsCard extends Component {
   render() {
     const { products } = this.state;
     return (
-      <Card className="products_card bg-success">
-        <span id="products_card_title">Products</span>
-        <div id="products_card_card" className="card">
+      <Card className="card bg-success">
+        <span id="card_title">Products</span>
+        <div id="card_products" className="card">
           <table id="products_card_table" className="table table-borderless">
             <thead className="thead-light">
               <tr>

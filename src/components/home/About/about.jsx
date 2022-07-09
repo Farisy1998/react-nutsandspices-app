@@ -6,9 +6,9 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <Card className="about_card bg-danger">
-        <span id="about_title">About Us</span>
-        <div id="about_card_card" className="card">
+      <Card className="card bg-danger">
+        <span id="card_title">About Us</span>
+        <div id="card_about" className="card">
           <h2 id="about_header1">
             A global leader in food & beverage <br></br> ingredients
           </h2>

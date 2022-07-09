@@ -37,6 +37,8 @@ class Home extends Component {
         <ProductsCard />
         <About />
         <Contact />
+        <br />
+        <br />
       </div>
     );
   }

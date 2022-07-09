@@ -16,9 +16,9 @@ class CategoriesCard extends Component {
   render() {
     const { products, currentCategory } = this.state;
     return (
-      <Card className="categories_card bg-primary">
-        <span id="categories_card_title">Categories</span>
-        <div id="categories_card_card" className="card bg-light">
+      <Card className="card bg-primary">
+        <span id="card_title">Categories</span>
+        <div id="card_categories" className="card bg-light">
           <Pagination
             className="pagination"
             categories={products}

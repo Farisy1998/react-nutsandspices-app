@@ -1,8 +1,8 @@
-.about_card {
+.card {
   margin-top: 5%;
 }
 
-#about_title {
+#card_title {
   font-weight: 450;
   font-size: 1.7em;
   text-align: center;
@@ -12,10 +12,11 @@
   color: #fff;
 }
 
-#about_card_card {
+#card_about {
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 4%;
+  margin-top: 2%;
   border-radius: 5;
 }
 

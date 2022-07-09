@@ -1,21 +1,12 @@
-.products_card {
+.card {
   margin-top: 5%;
 }
 
-#products_card_title {
-  font-weight: 450;
-  font-size: 1.7em;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 0.5%;
-  letter-spacing: 1px;
-  color: #fff;
-}
-
-#products_card_card {
+#card_products {
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
+  margin-top: 2%;
   border-radius: 5px;
 }
 
