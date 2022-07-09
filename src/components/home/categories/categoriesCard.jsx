@@ -1,32 +1,30 @@
 import React, { Component } from "react";
 import Card from "../card/card";
 import "./categoriesCard.css";
+import { getProducts } from "../Services/products";
+import _ from "lodash";
+import Pagination from "../product_pagination/pagination";
 
 class CategoriesCard extends Component {
   state = {
-    productCategories: [
-      { id: 1, value: "Nuts" },
-      { id: 2, value: "Spices" },
-      { id: 3, value: "Dry Fruits" },
-      { id: 4, value: "Herbs" },
-      { id: 5, value: "Dieting Seeds" },
-    ],
+    products: getProducts().filter((product) => product.category),
+    currentCategory: "All",
+  };
+  handleCategoryChange = (product) => {
+    this.setState({ currentCategory: product });
   };
   render() {
-    const { productCategories } = this.state;
+    const { products, currentCategory } = this.state;
     return (
-      <Card className="categories_card bg-info">
+      <Card className="categories_card bg-primary">
         <span id="categories_card_title">Categories</span>
-        <div className="card bg-primary">
-          <ul href="#" id="ul" className="nav">
-            {productCategories.map((category) => (
-              <li id="li" className="nav-item">
-                <a id="a" className="nav-link">
-                  <span id="span">{category.value}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div id="categories_card_card" className="card bg-light">
+          <Pagination
+            className="pagination"
+            categories={products}
+            onCategoryChange={this.handleCategoryChange}
+            currentCategory={currentCategory}
+          />
         </div>
       </Card>
     );

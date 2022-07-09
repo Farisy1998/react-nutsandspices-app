@@ -1,19 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
-import Nav from "./components/home/navbar/nav";
-import Carousel from "./components/home/carousel/carousel";
-import CategoriesCard from "./components/home/categories/categoriesCard";
-import ProductsCard from "./components/home/products/productsCard";
+import Home from './components/home/home_page/home';
 
-function App() {
-  return (
-    <React.Fragment>
-      <Nav />
-      <Carousel />
-      <CategoriesCard />
-      <ProductsCard />
-    </React.Fragment>
-  );
+class App extends Component {
+  handleCategoryChange = () => {
+    console.log("Handled category change");
+  };
+  render() {
+    return (
+      <React.Fragment>
+        <Home />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

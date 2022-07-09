@@ -1,5 +1,5 @@
-.container-fluid{
-  margin-top: 1%;
+.home_page {
+  background-color: wheat;
 }
 
 .navbar {
@@ -17,7 +17,7 @@
 }
 
 .navbar ul.nav li.nav-item {
-  border-radius: 5%;
+  border-radius: 3px;
   color: #000;
 }
 .navbar ul.nav li.nav-item:hover {

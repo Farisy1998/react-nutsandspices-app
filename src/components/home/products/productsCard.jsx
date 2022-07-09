@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 import "./productsCard.css";
 import Card from "../card/card";
+import { getProducts } from "../Services/products";
+import _ from "lodash";
+
 class ProductsCard extends Component {
   state = {
-    products: [
-      { id: 1, name: "Almound", price: "200" },
-      { id: 2, name: "Coffee", price: "300" },
-      { id: 3, name: "Dated", price: "500" },
-      { id: 4, name: "Dried Kismis", price: "450" },
-      { id: 5, name: "WaterMelone Seed", price: "50" },
-      { id: 6, name: "Casunut", price: "250" },
-    ],
+    products: getProducts().slice(1),
   };
   render() {
     const { products } = this.state;
@@ -20,19 +16,21 @@ class ProductsCard extends Component {
         <div id="products_card_card" className="card">
           <table id="products_card_table" className="table table-borderless">
             <thead className="thead-light">
-              <th>ID</th>
-              <th>Name</th>
-              <th>Price/kg</th>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price/kg</th>
+              </tr>
             </thead>
             <tbody>
               {products.map((product) => (
-                <tr>
-                  <td>{product.id}</td>
+                <tr key={product.id}>
                   <td>
                     <a id="product_name">
                       <span>{product.name}</span>
                     </a>
                   </td>
+                  <td>{product.category}</td>
                   <td>{product.price}</td>
                 </tr>
               ))}
