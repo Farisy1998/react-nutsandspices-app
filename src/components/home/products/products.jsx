@@ -1,17 +1,33 @@
 import React, { Component } from "react";
-import "./productsCard.css";
 import Card from "../card/card";
-import { getProducts } from "../Services/products";
+import "./products.css";
 import _ from "lodash";
+import Pagination from "../pagination/pagination";
+import { categorizeProducts } from "../utils/categorize";
+import { getProducts } from "../Services/products";
 
-class ProductsCard extends Component {
+class Products extends Component {
   state = {
-    products: getProducts().slice(1),
+    products: getProducts(),
+    currentCategory: "All",
+  };
+  handleCategoryChange = (category) => {
+    this.setState({ currentCategory: category });
   };
   render() {
-    const { products } = this.state;
+    const { products: allProducts, currentCategory } = this.state;
+    const products = categorizeProducts(allProducts, currentCategory);
     return (
-      <Card className="card bg-success">
+      <Card className="card bg-primary">
+        <span id="card_title">Categories</span>
+        <div id="card_categories" className="card bg-light">
+          <Pagination
+            className="pagination"
+            categories={this.state.products}
+            onCategoryChange={this.handleCategoryChange}
+            currentCategory={this.state.currentCategory}
+          />
+        </div>
         <span id="card_title">Products</span>
         <div id="card_products" className="card">
           <table id="products_card_table" className="table table-borderless">
@@ -42,4 +58,4 @@ class ProductsCard extends Component {
   }
 }
 
-export default ProductsCard;
+export default Products;

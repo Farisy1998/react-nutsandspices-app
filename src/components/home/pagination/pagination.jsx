@@ -3,7 +3,6 @@ import React from "react";
 const Pagination = (props) => {
   const { categories, onCategoryChange, currentCategory } = props;
   if (categories.length === 0) return "No products in side databse";
-  console.log(currentCategory);
   return (
     <nav id="pagination_nav">
       <ul id="pagination_ul" className="pagination">

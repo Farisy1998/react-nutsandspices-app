@@ -2,12 +2,12 @@
   margin-top: 5%;
 }
 
-#card_title {
+#about_card_title {
   font-weight: 450;
   font-size: 1.7em;
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 0.5%;
+  margin-bottom: 1%;
   letter-spacing: 1px;
   color: #fff;
 }

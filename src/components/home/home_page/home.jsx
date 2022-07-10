@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import "./home.css";
 import Carousel from "../carousel/carousel";
-import CategoriesCard from "../categories/categoriesCard";
-import ProductsCard from "../products/productsCard";
+import Products from "../products/products";
 import About from "../About/about";
 import Contact from "../contact/contact";
 
 class Home extends Component {
-  state = {};
   render() {
     return (
       <div className="home_page">
@@ -33,8 +31,7 @@ class Home extends Component {
           </div>
         </div>
         <Carousel />
-        <CategoriesCard />
-        <ProductsCard />
+        <Products />
         <About />
         <Contact />
         <br />
