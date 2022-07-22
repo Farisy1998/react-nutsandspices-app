@@ -10,7 +10,7 @@ class Products extends Component {
   state = {
     products: [],
     categories: [],
-    currentCategory: "All",
+    currentCategory: 1,
   };
   async componentDidMount() {
     const { data: products } = await axios.get(
@@ -28,8 +28,12 @@ class Products extends Component {
     this.setState({ currentCategory: category });
   };
   render() {
-    const { products: allProducts, currentCategory } = this.state;
-    const products = categorizeProducts(allProducts, currentCategory);
+    const { products: allProducts, categories, currentCategory } = this.state;
+    const products = categorizeProducts(
+      allProducts,
+      categories,
+      currentCategory
+    );
     return (
       <Card className="card bg-primary">
         <span id="card_title">Categories</span>

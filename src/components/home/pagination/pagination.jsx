@@ -6,12 +6,12 @@ const Pagination = (props) => {
   return (
     <nav id="pagination_nav">
       <ul id="pagination_ul" className="pagination">
-        {categories.map((product) => (
+        {categories.map((category) => (
           <li
-            key={product.product_id}
+            key={category.category_id}
             id="pagination_li"
             className={
-              product.category_id === currentCategory
+              category.category_id === currentCategory
                 ? "page-item active"
                 : "page-item"
             }
@@ -19,9 +19,9 @@ const Pagination = (props) => {
             <a
               id="pagination_a"
               className="page-link"
-              onClick={() => onCategoryChange(product.category_id)}
+              onClick={() => onCategoryChange(category.category_id)}
             >
-              {product.category_id}
+              {category.name}
             </a>
           </li>
         ))}
