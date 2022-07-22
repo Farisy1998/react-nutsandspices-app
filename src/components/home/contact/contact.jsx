@@ -13,8 +13,8 @@ class Contact extends Component {
               <span id="contact_card_title">Contact Us</span>
               <div id="contact_card" className="card bg-light">
                 <p id="contact_details">
-                  Kambungal House, <br></br>Koovallor P.O, Pallarimangalam,
-                  <br></br> Ernakulam, Kerala, India. <br></br>PIN: 686671
+                  ABCD Villa, <br></br>123 Colony, EFGH Street
+                  <br></br> District, State, India. <br></br>PH: 1234567890
                 </p>
               </div>
             </div>

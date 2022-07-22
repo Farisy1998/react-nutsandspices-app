@@ -4,13 +4,26 @@ import "./products.css";
 import _ from "lodash";
 import Pagination from "../pagination/pagination";
 import { categorizeProducts } from "../utils/categorize";
-import { getProducts } from "../Services/products";
+import axios from "axios";
 
 class Products extends Component {
   state = {
-    products: getProducts(),
+    products: [],
+    categories: [],
     currentCategory: "All",
   };
+  async componentDidMount() {
+    const { data: products } = await axios.get(
+      "http://localhost:8080/products"
+    );
+    this.setState({ products });
+
+    const { data: categories } = await axios.get(
+      "http://localhost:8080/categories"
+    );
+
+    this.setState({ categories });
+  }
   handleCategoryChange = (category) => {
     this.setState({ currentCategory: category });
   };
@@ -23,7 +36,7 @@ class Products extends Component {
         <div id="card_categories" className="card bg-light">
           <Pagination
             className="pagination"
-            categories={this.state.products}
+            categories={this.state.categories}
             onCategoryChange={this.handleCategoryChange}
             currentCategory={this.state.currentCategory}
           />
@@ -40,13 +53,13 @@ class Products extends Component {
             </thead>
             <tbody>
               {products.map((product) => (
-                <tr key={product.id}>
+                <tr key={product.product_id}>
                   <td>
                     <a id="product_name">
                       <span>{product.name}</span>
                     </a>
                   </td>
-                  <td>{product.category}</td>
+                  <td>{product.category_id}</td>
                   <td>{product.price}</td>
                 </tr>
               ))}
