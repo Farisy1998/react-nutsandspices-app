@@ -18,22 +18,16 @@
   margin-right: 10%;
 }
 
-.navbar ul.nav li.nav-item {
-  border-radius: 3px;
-  color: #000;
+.navbar ul.nav li .button {
+  border-radius: 4px;
+  margin-left: 20px;
 }
-.navbar ul.nav li.nav-item:hover {
-  background: blueviolet;
-}
-.navbar ul.nav li a {
+
+.navbar ul.nav li .button {
   font-size: 1.3em;
   font-weight: 500;
 }
 
-.navbar ul.nav li a span {
-  color: #000;
-}
-
-.navbar ul.nav li.nav-item:hover a span {
+.navbar ul.nav li.nav-item:hover .button span {
   color: #fff;
 }

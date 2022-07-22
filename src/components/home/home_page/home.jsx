@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import Form from "react-bootstrap/Form";
 import "./home.css";
+import Button from 'react-bootstrap/Button';
 import Carousel from "../carousel/carousel";
 import Products from "../products/products";
 import About from "../About/about";
 import Contact from "../contact/contact";
+import Login from "../Login/login";
 
 const Home = () => {
   const [modalIsOpen, setOpen] = useState(false);
   const handleLoginModal = () => setOpen(true);
   const handleLoginClose = () => setOpen(false);
-
   return (
     <div className="home_page">
       <div className="container-fluid">
@@ -22,22 +21,24 @@ const Home = () => {
             </span>
             <ul className="nav">
               <li className="nav-item">
-                <a onClick={handleLoginModal} className="nav-link" href="">
+                <Button
+                  onClick={handleLoginModal}
+                  className="button"
+                  variant="primary"
+                >
                   <span>Login</span>
-                  <Modal show={modalIsOpen} onClose={handleLoginClose}>
-                    <Modal.Header closeButton>
-                      <Modal.Title>Login</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                      <Form></Form>
-                    </Modal.Body>
-                  </Modal>
-                </a>
+                  <Login isShow={modalIsOpen} />
+                </Button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">
-                  <span>Sign up</span>
-                </a>
+                <Button
+                  onClick={handleLoginModal}
+                  className="button"
+                  variant="success"
+                >
+                  <span>Sign In</span>
+                  <Login isShow={modalIsOpen} />
+                </Button>
               </li>
             </ul>
           </div>
